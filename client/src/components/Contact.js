@@ -6,9 +6,9 @@ function Contact() {
     return(
         <div>
             <NavBar/>
-            <h>Kangda Wei</h><br/>
-            <h>Email: kangda@live.unc.edu</h><br/>
-            <h>Phone: 919-904-5280</h>
+            <p class = 'contact'>Kangda Wei</p><br/>
+            <p class = 'contact'>Email: kangda@live.unc.edu</p><br/>
+            <p class = 'contact'>Phone: 919-904-5280</p>
             <GoogleMap />
         </div>
     );

@@ -66,12 +66,12 @@ nav a:hover::before {
 
 p {
   font-size: x-small;
-  color: white;
+  color: rgb(2, 2, 2);
   align-content: center;
 }
 
 #history {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .App {

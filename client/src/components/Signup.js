@@ -39,7 +39,7 @@ export default function Signup() {
                 <div>
                 <Card>
         <Card.Body>
-          <h2 className="text-center mb-4">Sign Up</h2>
+          <h2 class="text-center mb-4">Sign Up</h2>
           {error && <Alert variant="danger">{error}</Alert>}
           <Form onSubmit={handleSubmit}>
             <Form.Group id="email">
@@ -60,7 +60,7 @@ export default function Signup() {
           </Form>
         </Card.Body>
       </Card>
-      <div className="w-100 text-center mt-2">
+      <div class="w-100 text-center mt-2">
         Already have an account? <Link to="/">Log In</Link>
       </div>
                 </div>
