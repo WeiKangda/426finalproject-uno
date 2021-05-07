@@ -46,10 +46,10 @@ export default function ForgotPassword() {
               Reset Password
             </Button>
           </Form>
-          <div >
+          <div class = 'toblack'>
             <Link to="/">Login</Link>
           </div>
-          <div class="w-100 text-center mt-2">
+          <div class = 'toblack'>
         Need an account? <Link to="/signup">Sign Up</Link>
       </div>
         </Card.Body>

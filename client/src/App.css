@@ -82,6 +82,9 @@ a {
   color: #ffffff;
 }
 
+.toblack{
+  color: #000;
+}
 /* Homepage */
 .Homepage {
   background-image: url('./assets/Landing-Page.gif');

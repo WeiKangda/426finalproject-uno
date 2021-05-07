@@ -61,7 +61,7 @@ export default function Signup() {
           </Form>
         </Card.Body>
       </Card>
-      <div>
+      <div class = 'toblack'>
         Already have an account? <Link to="/">Log In</Link>
       </div>
                 </div>

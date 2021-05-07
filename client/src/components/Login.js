@@ -45,12 +45,12 @@ export default function Login() {
               Log In
             </Button>
           </Form>
-          <div>
+          <div class = 'toblack'>
             <Link to="/forgot-password">Forgot Password?</Link>
           </div>
         </Card.Body>
       </Card>
-      <div>
+      <div class = 'toblack'>
         Need an account? <Link to="/signup">Sign Up</Link>
       </div>
     </>
