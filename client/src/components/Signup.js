@@ -43,15 +43,16 @@ export default function Signup() {
           {error && <Alert variant="danger">{error}</Alert>}
           <Form onSubmit={handleSubmit}>
             <Form.Group id="email">
-              <Form.Label>Email</Form.Label>
+              <p>Email</p>
               <Form.Control type="email" ref={emailRef} required />
             </Form.Group>
             <Form.Group id="password">
-              <Form.Label>Password</Form.Label>
+              
+              <p>Password</p>
               <Form.Control type="password" ref={passwordRef} required />
             </Form.Group>
             <Form.Group id="password-confirm">
-              <Form.Label>Password Confirmation</Form.Label>
+              <p>Password Confirmation</p>
               <Form.Control type="password" ref={passwordConfirmRef} required />
             </Form.Group>
             <Button disabled={loading} className="w-100" type="submit">
@@ -60,7 +61,7 @@ export default function Signup() {
           </Form>
         </Card.Body>
       </Card>
-      <div class="w-100 text-center mt-2">
+      <div>
         Already have an account? <Link to="/">Log In</Link>
       </div>
                 </div>

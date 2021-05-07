@@ -65,7 +65,7 @@ nav a:hover::before {
 }
 
 p {
-  font-size: x-small;
+  font-size: medium;
   color: rgb(2, 2, 2);
   align-content: center;
 }

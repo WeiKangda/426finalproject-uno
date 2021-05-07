@@ -30,27 +30,27 @@ export default function Login() {
     <>
       <Card>
         <Card.Body>
-          <h2 class="text-center mb-4">Log In to the World of Uno</h2>
+          <h2 id = 'history'>Log In to the World of Uno</h2>
           {error && <Alert variant="danger">{error}</Alert>}
           <Form onSubmit={handleSubmit}>
             <Form.Group id="email">
-              <Form.Label>Email</Form.Label>
+              <p>Email</p>
               <Form.Control type="email" ref={emailRef} required />
             </Form.Group>
             <Form.Group id="password">
-              <Form.Label>Password</Form.Label>
+              <p>Password</p>
               <Form.Control type="password" ref={passwordRef} required />
             </Form.Group>
             <Button disabled={loading} className="w-100" type="submit">
               Log In
             </Button>
           </Form>
-          <div class="w-100 text-center mt-3">
+          <div>
             <Link to="/forgot-password">Forgot Password?</Link>
           </div>
         </Card.Body>
       </Card>
-      <div class="w-100 text-center mt-2">
+      <div>
         Need an account? <Link to="/signup">Sign Up</Link>
       </div>
     </>
