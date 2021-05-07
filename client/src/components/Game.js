@@ -22,7 +22,7 @@ import gameOverSound from '../assets/sounds/game-over-sound.mp3'
 //DRAW 4 WILD - 600
 
 let socket
- const ENDPOINT = 'http://localhost:5000'
+ const ENDPOINT = 'https://comp426finalproject-uno.herokuapp.com/'
 
 
 const Game = (props) => {
