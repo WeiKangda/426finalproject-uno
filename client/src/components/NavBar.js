@@ -28,7 +28,7 @@ function NavBar() {
             <ul>
                 <li><Link to="/home">Home</Link></li>
                 <li><Link to="/history">History</Link></li>
-                <li><Link to="/gamepage">Paly a Game</Link></li>
+                <li><Link to="/gamepage">Play a Game</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
                 
                 <button className='game-button orange'><Link to = "/">Log Out</Link></button>
