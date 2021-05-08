@@ -23,12 +23,12 @@ class ResultsAdd extends React.Component{
     render(){
         return(
             <div>
-                <h>Let us know your thoughts!</h><br/>
+                <p class = 'contact'>Let us know your thoughts!</p><br/>
                 <form onSubmit={this.postDataHandler}>
-                    <label>Email:</label>
+                    <p class = 'contact'>Email:</p>
                     <input type = "text" placeholder = "email" value = {this.state.email} 
                     onChange={(e)=>this.setState({email:e.target.value})}/><br/>
-                    <label>Comment:</label><br/>
+                    <p class = 'contact'>Comment:</p><br/>
                     <textarea value = {this.state.message} 
                     onChange={(e)=>this.setState({message:e.target.value})}>Enter your thoughts here.</textarea><br/>
                     <button>Submit</button>
