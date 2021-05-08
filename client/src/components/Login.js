@@ -2,6 +2,9 @@ import React, { useRef, useState } from "react"
 import { Form, Button, Card, Alert } from "react-bootstrap"
 import { useAuth } from "../contexts/AuthContext"
 import { Link, useHistory } from "react-router-dom"
+import results from '../result'
+import result from "../result"
+import { response } from "express"
 
 export default function Login() {
   const emailRef = useRef()
@@ -11,8 +14,18 @@ export default function Login() {
   const [loading, setLoading] = useState(false)
   const history = useHistory()
 
+  state = {
+    email:''
+  }
+
   async function handleSubmit(e) {
     e.preventDefault()
+    const Data = {
+      email : this.state.email
+    }
+    result.post('/marks.json',Data).then(response=>{
+      console.log(response);
+    })
 
     try {
       setError("")
@@ -35,7 +48,7 @@ export default function Login() {
           <Form onSubmit={handleSubmit}>
             <Form.Group id="email">
               <p>Email</p>
-              <Form.Control type="email" ref={emailRef} required />
+              <Form.Control type="email" value = {this.state.email} onChange = {(e)=>this.setState({email: e.target.value})} ref={emailRef} required />
             </Form.Group>
             <Form.Group id="password">
               <p>Password</p>
